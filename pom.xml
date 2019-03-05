@@ -26,6 +26,9 @@
     <javax.servlet.jsp.version>2.2</javax.servlet.jsp.version>
     <javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
 
+    <!-- Jackson Version -->
+    <com.jackson.version>2.9.7</com.jackson.version>
+
     <!-- Logging Version List -->
     <org.slf4j.version>1.7.7</org.slf4j.version>
     <logback.classic.version>1.1.7</logback.classic.version>
@@ -103,6 +106,13 @@
       <version>${javax.servlet.jstl.version}</version>
     </dependency>
 
+    <!-- JACKSON DATABIND DEPENDENCY -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${com.jackson.version}</version>
+    </dependency>
+
     <!-- LOGGING DEPENDENCY LIST -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -168,5 +178,15 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>6</source>
+          <target>6</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
