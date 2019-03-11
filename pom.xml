@@ -87,6 +87,13 @@
       <version>${org.springframework.version}</version>
     </dependency>
 
+    <!-- SPRING WEBSOCKET -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-websocket</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+
     <!-- JAVAX SERVLET DEPENDENCY LIST -->
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -104,13 +111,6 @@
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>${javax.servlet.jstl.version}</version>
-    </dependency>
-
-    <!-- JACKSON DATABIND DEPENDENCY -->
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>${com.jackson.version}</version>
     </dependency>
 
     <!-- LOGGING DEPENDENCY LIST -->
